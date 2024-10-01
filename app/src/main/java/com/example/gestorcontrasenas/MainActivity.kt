@@ -7,15 +7,12 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.gestorcontrasenas.ui.theme.GestorContrasenasTheme
@@ -43,19 +40,21 @@ fun GreetingText(modifier: Modifier = Modifier) {
         modifier = modifier
     ) {
         Text(
-            text = message,
-            fontSize = 100.sp,
+            text = "Usuario: ",
+            fontSize = 28.sp,
             lineHeight = 116.sp,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(top = 16.dp)
+            modifier = Modifier
+                .padding(start = 28.dp)
+                .padding(end = 10.dp)
+                .align(alignment = Alignment.Start)
         )
         Text(
-            text = from,
-            fontSize = 36.sp,
+            text = "Contraseña: ",
+            fontSize = 28.sp,
             modifier = Modifier
-                .padding(top = 16.dp)
-                .padding(end = 16.dp)
-                .align(alignment = Alignment.CenterHorizontally)
+                .padding(start = 28.dp)
+                .padding(end = 10.dp)
+                .align(alignment = Alignment.Start)
 
         )
     }
