@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -55,11 +56,25 @@ fun GreetingText(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .padding(start = 28.dp, end = 10.dp)
             )
+            Text(
+                text = "Instagram",
+                fontSize = 20.sp,
+                modifier = Modifier
+                    .padding(start = 28.dp, end = 5.dp, top = 30.dp)
+            )
+            Divider(
+                color = Color.Gray,
+                thickness = 2.dp,
+                modifier = Modifier
+                    .padding(horizontal = 28.dp, vertical = 3.dp)
+                    .fillMaxWidth()
+            )
+
 
             Row {
                 Text(
                     text = "Usuario:",
-                    fontSize = 28.sp,
+                    fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
                     lineHeight = 116.sp,
                     modifier = Modifier
@@ -67,7 +82,7 @@ fun GreetingText(modifier: Modifier = Modifier) {
                 )
                 Text(
                     text = "Amaro",
-                    fontSize = 28.sp,
+                    fontSize = 24.sp,
                     lineHeight = 116.sp,
                     modifier = Modifier
                         .padding(start = 10.dp, end = 10.dp)
@@ -76,14 +91,14 @@ fun GreetingText(modifier: Modifier = Modifier) {
             Row {
                 Text(
                     text = "Contraseña:",
-                    fontSize = 28.sp,
+                    fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier
                         .padding(start = 28.dp, end = 10.dp)
                 )
                 Text(
                     text = "1234",
-                    fontSize = 28.sp,
+                    fontSize = 24.sp,
                     modifier = Modifier
                         .padding(start = 10.dp, end = 10.dp)
                 )
