@@ -40,7 +40,7 @@ fun GreetingText(modifier: Modifier = Modifier) {
         modifier = modifier
     ) {
         Text(
-            text = "Usuario: ",
+            text = "Amaro",
             fontSize = 28.sp,
             lineHeight = 116.sp,
             modifier = Modifier
@@ -49,7 +49,7 @@ fun GreetingText(modifier: Modifier = Modifier) {
                 .align(alignment = Alignment.Start)
         )
         Text(
-            text = "Contraseña: ",
+            text = "1234",
             fontSize = 28.sp,
             modifier = Modifier
                 .padding(start = 28.dp)
