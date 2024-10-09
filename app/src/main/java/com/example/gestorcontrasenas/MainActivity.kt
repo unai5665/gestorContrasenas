@@ -47,6 +47,12 @@ class MainActivity : ComponentActivity() {
 }
 @Composable
 fun GreetingText(modifier: Modifier = Modifier) {
+    
+    val entradasContraseña = remember { mutableStateListOf<EntradaContraseña>() }
+    val nuevaPlataforma = remember { mutableStateOf("") }
+    val nuevoUsuario = remember { mutableStateOf("") }
+    val nuevaContraseña = remember { mutableStateOf("") }
+    
     Box(
         modifier = Modifier
             .fillMaxSize()
